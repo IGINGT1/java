@@ -7,7 +7,7 @@ public class Company {
 
     public static int income;
 
-    public static ArrayList<Employee> employee = new ArrayList<>();
+    public ArrayList<Employee> employee = new ArrayList<>();
 
     public static int getIncome() {
         return income;
