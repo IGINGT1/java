@@ -6,7 +6,7 @@ public class Main {
         Company company = new Company();
         Company.setIncome(10000000);
         hireEmployees(company);
-        Collections.sort(company.employee, (o1, o2) -> o1.getMonthSalary() - o2.getMonthSalary());
+        Collections.sort(company.employee, Comparator.comparingInt(Employee::getMonthSalary));
         for (Employee emp : company.employee){
            System.out.println(emp.getMonthSalary());
         }
